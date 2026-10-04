@@ -43,6 +43,3 @@ predictor, scoreboard, and functional coverage.
 ├── LICENSE
 └── README.md
 ```
-
-Simulation-generated files are excluded from version control except for the
-coverage directory and Questa `.do` scripts. Excel workbooks are also excluded.

@@ -403,7 +403,7 @@ Each `vsim` invocation uses `-sv_seed random`. Questa chooses a random simulator
 
 ### 14.2 Single-test script
 
-`verification/sim/run_unmapped_reg.do` compiles and runs a single test without coverage instrumentation. Despite its filename and header comment, the current `+UVM_TESTNAME` in the script is `mh_i2c_test_reset_ongoing`; adjust that value if the intended run is the unmapped-register test.
+`verification/sim/run_unmapped_reg.do` compiles and runs a single test without coverage instrumentation. Despite its filename and header comment, the current `+UVM_TESTNAME` in the script is `mh_i2c_test_unmapped_reg`; adjust that value if the intended run is the unmapped-register test.
 
 ### 14.3 Selecting a test manually
 

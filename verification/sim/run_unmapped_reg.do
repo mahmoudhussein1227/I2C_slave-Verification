@@ -49,7 +49,7 @@ vlog -work work -sv \
 # ---------- Simulate unmapped-register test ----------
 vsim -voptargs="+acc" work.testbench \
     -sv_seed random \
-    +UVM_TESTNAME=mh_i2c_test_reset_ongoing \
+    +UVM_TESTNAME=mh_i2c_test_unmapped_reg \
     +UVM_VERBOSITY=UVM_MEDIUM \
     -L work \
     -L mtiUvm

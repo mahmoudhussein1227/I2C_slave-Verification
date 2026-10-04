@@ -1,0 +1,1382 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /testbench/i2c_intf
+=== Design Unit: work.mh_i2c_intf
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         2         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/i2c_intf/assert_data_validity
+                     ../testbench/mh_i2c_intf.sv(52)
+                                                        0          4
+/testbench/i2c_intf/assert_start_eventually_stop
+                     ../testbench/mh_i2c_intf.sv(60)
+                                                        0          4
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/testbench/i2c_intf/cover_start_eventually_stop 
+                                         mh_i2c_intf Verilog  SVA  ../testbench/mh_i2c_intf.sv(62)
+                                                                               240 Covered   
+
+=================================================================================
+=== Instance: /testbench/dut/u_core
+=== Design Unit: work.i2c_slave_core
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        81        77         4    95.06%
+
+================================Branch Details================================
+
+Branch Coverage for instance /testbench/dut/u_core
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../RTL/i2c_slave_core.v
+------------------------------------IF Branch------------------------------------
+    26                                     33981     Count coming in to IF
+    26              1                         12     
+    29              1                      33969     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                       664     Count coming in to IF
+    56              1                        379     
+    56              2                        285     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    60                                      2511     Count coming in to IF
+    60              1                         12     
+    61              1                        241     
+    62              1                        200     
+    63              1                       2058     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    68                                     15034     Count coming in to CASE
+    69              1                        821     
+    70              1                       7276     
+    74              1                        482     
+    75              1                       3359     
+    76              1                        326     
+    77              1                       1363     
+    78              1                       1184     
+    79              1                        218     
+    83              1                          5     
+Branch totals: 9 hits of 9 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                       821     Count coming in to IF
+    69              2                        201     
+                                             620     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                      7276     Count coming in to IF
+    70              2                        241     
+                                            7035     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    71                                       241     Count coming in to IF
+    71              1                        181     
+    72              1                         60     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                       482     Count coming in to IF
+    74              2                        181     
+                                             301     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                       181     Count coming in to IF
+    74              3                         60     
+    74              4                        121     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                      3359     Count coming in to IF
+    75              2                        121     
+                                            3238     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                       326     Count coming in to IF
+    76              2                        120     
+                                             206     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                       120     Count coming in to IF
+    76              3                         80     
+    76              4                         40     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                      1363     Count coming in to IF
+    77              2                         40     
+                                            1323     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                      1184     Count coming in to IF
+    78              2                         60     
+                                            1124     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                       218     Count coming in to IF
+    79              2                         40     
+                                             178     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                        40     Count coming in to IF
+    80              1                    ***0***     
+    81              1                         40     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                   ***0***     Count coming in to IF
+    80              2                    ***0***     
+    80              3                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    81                                        40     Count coming in to IF
+    81              2                         13     
+    81              3                         27     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    88                                     21165     Count coming in to IF
+    88              1                         12     
+    97              1                        241     
+    104             1                        200     
+    108             1                      20712     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    111                                    20712     Count coming in to CASE
+    112             1                       9204     
+    124             1                        965     
+    130             1                       4448     
+    143             1                        648     
+    148             1                       1776     
+    160             1                        431     
+    174             1                       2368     
+    186             1                        872     
+Branch totals: 8 hits of 8 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    114                                     9204     Count coming in to IF
+    114             1                       1928     
+                                            7276     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    118                                     9204     Count coming in to IF
+    118             1                        241     
+                                            8963     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    127                                      965     Count coming in to IF
+    127             1                        360     
+                                             605     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    132                                     4448     Count coming in to IF
+    132             1                        968     
+                                            3480     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    136                                     4448     Count coming in to IF
+    136             1                        121     
+                                            4327     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    150                                     1776     Count coming in to IF
+    150             1                        373     
+                                            1403     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    154                                     1776     Count coming in to IF
+    154             1                         40     
+                                            1736     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    155                                       40     Count coming in to IF
+    155             1                         13     
+                                              27     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    161                                      431     Count coming in to IF
+    161             1                        240     
+    167             1                        191     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    163                                      240     Count coming in to IF
+    163             1                    ***0***     
+                                             240     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    177                                     2368     Count coming in to IF
+    177             1                        540     
+                                            1828     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    181                                     2368     Count coming in to IF
+    181             1                         60     
+                                            2308     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      17        17         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /testbench/dut/u_core --
+
+  File ../RTL/i2c_slave_core.v
+----------------Focused Condition View-------------------
+Line       70 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  scl_neg_0             -                             
+  Row   2:          5  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          5  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          5  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       71 Item    1  (shift_reg[7:1] == 80)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (shift_reg[7:1] == 80)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  (shift_reg[7:1] == 80)_0  -                             
+  Row   2:          4  (shift_reg[7:1] == 80)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       75 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          4  scl_neg_0             -                             
+  Row   2:          4  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          4  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          4  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       77 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          2  scl_neg_0             -                             
+  Row   2:          2  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          2  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          2  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          3  scl_neg_0             -                             
+  Row   2:          3  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          3  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          3  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       118 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  scl_neg_0             -                             
+  Row   2:          5  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          5  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          5  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       136 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          4  scl_neg_0             -                             
+  Row   2:          4  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          4  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          4  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       154 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          2  scl_neg_0             -                             
+  Row   2:          2  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          2  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          2  (bit_cnt == 8)_1      scl_neg                       
+
+----------------Focused Condition View-------------------
+Line       181 Item    1  (scl_neg && (bit_cnt == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+         scl_neg         Y
+  (bit_cnt == 8)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          3  scl_neg_0             -                             
+  Row   2:          3  scl_neg_1             (bit_cnt == 8)                
+  Row   3:          3  (bit_cnt == 8)_0      scl_neg                       
+  Row   4:          3  (bit_cnt == 8)_1      scl_neg                       
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     11        11         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /testbench/dut/u_core --
+
+  File ../RTL/i2c_slave_core.v
+----------------Focused Expression View-----------------
+Line       35 Item    1  ((sda_r1 && ~sda_r0) && scl_r1)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      sda_r1         Y
+      sda_r0         Y
+      scl_r1         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  sda_r1_0              -                             
+  Row   2:          5  sda_r1_1              (scl_r1 && ~sda_r0)           
+  Row   3:          5  sda_r0_0              (scl_r1 && sda_r1)            
+  Row   4:          5  sda_r0_1              sda_r1                        
+  Row   5:          5  scl_r1_0              (sda_r1 && ~sda_r0)           
+  Row   6:          5  scl_r1_1              (sda_r1 && ~sda_r0)           
+
+----------------Focused Expression View-----------------
+Line       36 Item    1  ((~sda_r1 && sda_r0) && scl_r1)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      sda_r1         Y
+      sda_r0         Y
+      scl_r1         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          4  sda_r1_0              (scl_r1 && sda_r0)            
+  Row   2:          5  sda_r1_1              -                             
+  Row   3:          5  sda_r0_0              ~sda_r1                       
+  Row   4:          4  sda_r0_1              (scl_r1 && ~sda_r1)           
+  Row   5:          5  scl_r1_0              (~sda_r1 && sda_r0)           
+  Row   6:          4  scl_r1_1              (~sda_r1 && sda_r0)           
+
+----------------Focused Expression View-----------------
+Line       37 Item    1  (scl_r0 && ~scl_r1)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      scl_r0         Y
+      scl_r1         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  scl_r0_0              -                             
+  Row   2:          5  scl_r0_1              ~scl_r1                       
+  Row   3:          5  scl_r1_0              scl_r0                        
+  Row   4:          5  scl_r1_1              scl_r0                        
+
+----------------Focused Expression View-----------------
+Line       38 Item    1  (~scl_r0 && scl_r1)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+      scl_r0         Y
+      scl_r1         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          5  scl_r0_0              scl_r1                        
+  Row   2:          5  scl_r0_1              -                             
+  Row   3:          5  scl_r1_0              ~scl_r0                       
+  Row   4:          5  scl_r1_1              ~scl_r0                       
+
+----------------Focused Expression View-----------------
+Line       56 Item    1  (sda_oe? sda_out: 1'bZ)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+     sda_out         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   3:          4  sda_out_0             sda_oe                        
+  Row   4:          3  sda_out_1             sda_oe                        
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       8         8         0   100.00%
+    FSM Transitions                 23        14         9    60.86%
+
+================================FSM Details================================
+
+FSM Coverage for instance /testbench/dut/u_core --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  69          STATE_IDLE                   0
+  70      STATE_DEV_ADDR                   1
+  74       STATE_ACK_DEV                   2
+  75      STATE_REG_ADDR                   3
+  78     STATE_READ_DATA                   6
+  76       STATE_ACK_REG                   4
+  77    STATE_WRITE_DATA                   5
+  79      STATE_ACK_DATA                   7
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+              STATE_IDLE                 672          
+          STATE_DEV_ADDR                 482          
+           STATE_ACK_DEV                 362          
+          STATE_REG_ADDR                 242          
+         STATE_READ_DATA                 120          
+           STATE_ACK_REG                 242          
+        STATE_WRITE_DATA                 186          
+          STATE_ACK_DATA                 200          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  69                   0                 201          STATE_IDLE -> STATE_DEV_ADDR          
+  72                   1                  60          STATE_DEV_ADDR -> STATE_IDLE          
+  71                   2                 181          STATE_DEV_ADDR -> STATE_ACK_DEV          
+  74                   3                 121          STATE_ACK_DEV -> STATE_REG_ADDR          
+  74                   4                  60          STATE_ACK_DEV -> STATE_READ_DATA          
+  75                   7                 121          STATE_REG_ADDR -> STATE_ACK_REG          
+  78                  10                  60          STATE_READ_DATA -> STATE_ACK_DATA          
+  76                  13                  41          STATE_ACK_REG -> STATE_IDLE          
+  76                  14                  80          STATE_ACK_REG -> STATE_WRITE_DATA          
+  77                  16                  40          STATE_WRITE_DATA -> STATE_ACK_DATA          
+  62                  17                  13          STATE_WRITE_DATA -> STATE_IDLE          
+  61                  18                  40          STATE_WRITE_DATA -> STATE_DEV_ADDR          
+  81                  19                  87          STATE_ACK_DATA -> STATE_IDLE          
+  81                  20                  13          STATE_ACK_DATA -> STATE_WRITE_DATA          
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  62                   5          STATE_ACK_DEV -> STATE_IDLE
+  61                   6          STATE_ACK_DEV -> STATE_DEV_ADDR
+  62                   8          STATE_REG_ADDR -> STATE_IDLE
+  61                   9          STATE_REG_ADDR -> STATE_DEV_ADDR
+  62                  11          STATE_READ_DATA -> STATE_IDLE
+  61                  12          STATE_READ_DATA -> STATE_DEV_ADDR
+  61                  15          STATE_ACK_REG -> STATE_DEV_ADDR
+  80                  21          STATE_ACK_DATA -> STATE_READ_DATA
+  61                  22          STATE_ACK_DATA -> STATE_DEV_ADDR
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   8         8         0   100.00%
+        FSM Transitions             23        14         9    60.86%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      81        79         2    97.53%
+
+================================Statement Details================================
+
+Statement Coverage for instance /testbench/dut/u_core --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../RTL/i2c_slave_core.v
+    25              1                      33981     
+    27              1                         12     
+    27              2                         12     
+    28              1                         12     
+    28              2                         12     
+    30              1                      33969     
+    30              2                      33969     
+    31              1                      33969     
+    31              2                      33969     
+    35              1                      14121     
+    36              1                      14121     
+    37              1                      17607     
+    38              1                      17607     
+    56              1                        669     
+    59              1                       2511     
+    60              1                         12     
+    61              1                        241     
+    62              1                        200     
+    63              1                       2058     
+    66              1                      15034     
+    67              1                      15034     
+    69              1                        201     
+    71              1                        181     
+    72              1                         60     
+    74              1                        181     
+    75              1                        121     
+    76              1                        120     
+    77              1                         40     
+    78              1                         60     
+    80              1                    ***0***     
+    81              1                         40     
+    83              1                          5     
+    87              1                      21165     
+    89              1                         12     
+    90              1                         12     
+    91              1                         12     
+    92              1                         12     
+    93              1                         12     
+    94              1                         12     
+    95              1                         12     
+    96              1                         12     
+    99              1                        241     
+    100             1                        241     
+    101             1                        241     
+    102             1                        241     
+    105             1                        200     
+    106             1                        200     
+    107             1                        200     
+    109             1                      20712     
+    113             1                       9204     
+    115             1                       1928     
+    116             1                       1928     
+    119             1                        241     
+    120             1                        241     
+    125             1                        965     
+    126             1                        965     
+    127             1                        360     
+    131             1                       4448     
+    133             1                        968     
+    134             1                        968     
+    137             1                        121     
+    138             1                        121     
+    139             1                        121     
+    144             1                        648     
+    145             1                        648     
+    149             1                       1776     
+    151             1                        373     
+    152             1                        373     
+    155             1                         13     
+    156             1                         40     
+    162             1                        240     
+    165             1                    ***0***     
+    168             1                        191     
+    169             1                        191     
+    175             1                       2368     
+    176             1                       2368     
+    178             1                        540     
+    179             1                        540     
+    182             1                         60     
+    187             1                        872     
+    188             1                        872     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        128       127         1    99.21%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /testbench/dut/u_core --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                      bit_cnt[0-3]           5           5      100.00 
+                                               clk           5           5      100.00 
+                                     next_state[0]           5           5      100.00 
+                                   next_state[1-2]           4           4      100.00 
+                                       reg_addr[0]           2           3      100.00 
+                                       reg_addr[1]           3           4      100.00 
+                                     reg_addr[2-3]           1           1      100.00 
+                                  reg_addr_full[0]           2           3      100.00 
+                                  reg_addr_full[1]           3           4      100.00 
+                                reg_addr_full[2-7]           1           1      100.00 
+                                   reg_addr_mapped           1           0       50.00 
+                                  reg_rd_data[0-7]           1           1      100.00 
+                                    reg_wr_allowed           3           2      100.00 
+                                  reg_wr_data[0-7]           5           5      100.00 
+                                         reg_wr_en           1           1      100.00 
+                                             rst_n           5           5      100.00 
+                                            rw_bit           4           4      100.00 
+                                               scl           5           5      100.00 
+                                           scl_neg           5           5      100.00 
+                                           scl_pos           5           5      100.00 
+                                            scl_r0           5           5      100.00 
+                                            scl_r1           5           5      100.00 
+                                               sda           5           5      100.00 
+                                            sda_oe           4           4      100.00 
+                                           sda_out           4           4      100.00 
+                                            sda_r0           5           5      100.00 
+                                            sda_r1           5           5      100.00 
+                                    shift_reg[0-7]           5           5      100.00 
+                                        start_cond           5           5      100.00 
+                                          state[0]           5           5      100.00 
+                                        state[1-2]           4           4      100.00 
+                                         stop_cond           4           4      100.00 
+
+Total Node Count     =         64 
+Toggled Node Count   =         63 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      99.21% (127 of 128 bins)
+
+=================================================================================
+=== Instance: /testbench/dut/u_reg_file
+=== Design Unit: work.register_file
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        12        11         1    91.66%
+
+================================Branch Details================================
+
+Branch Coverage for instance /testbench/dut/u_reg_file
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../RTL/register_file.v
+------------------------------------IF Branch------------------------------------
+    36                                      3839     Count coming in to IF
+    36              1                         12     
+    41              1                         13     
+                                            3814     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    42                                        13     Count coming in to CASE
+    43              1                          2     
+    44              1                          8     
+    45              1                          3     
+    47              1                    ***0***     
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------CASE Branch------------------------------------
+    56                                        83     Count coming in to CASE
+    57              1                         14     
+    58              1                         16     
+    59              1                         11     
+    60              1                         11     
+    61              1                         31     
+Branch totals: 5 hits of 5 branches = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      7         7         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /testbench/dut/u_reg_file --
+
+  File ../RTL/register_file.v
+----------------Focused Expression View-----------------
+Line       26 Item    1  (((i2c_addr == 0) || (i2c_addr == 1)) || (i2c_addr == 2))
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage   Hint
+      -----------  --------  -----------------------  --------------
+  (i2c_addr == 0)         Y
+  (i2c_addr == 1)         Y
+  (i2c_addr == 2)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          3  (i2c_addr == 0)_0     (~(i2c_addr == 2) && ~(i2c_addr == 1))
+  Row   2:          5  (i2c_addr == 0)_1     -                             
+  Row   3:          3  (i2c_addr == 1)_0     (~(i2c_addr == 2) && ~(i2c_addr == 0))
+  Row   4:          2  (i2c_addr == 1)_1     ~(i2c_addr == 0)              
+  Row   5:          3  (i2c_addr == 2)_0     ~((i2c_addr == 0) || (i2c_addr == 1))
+  Row   6:          3  (i2c_addr == 2)_1     ~((i2c_addr == 0) || (i2c_addr == 1))
+
+----------------Focused Expression View-----------------
+Line       29 Item    1  ((((i2c_addr_full == 0) || (i2c_addr_full == 1)) || (i2c_addr_full == 2)) || (i2c_addr_full == 3))
+Expression totals: 4 of 4 input terms covered = 100.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (i2c_addr_full == 0)         Y
+  (i2c_addr_full == 1)         Y
+  (i2c_addr_full == 2)         Y
+  (i2c_addr_full == 3)         Y
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (i2c_addr_full == 0)_0  (~(i2c_addr_full == 3) && ~(i2c_addr_full == 2) && ~(i2c_addr_full == 1))
+  Row   2:          5  (i2c_addr_full == 0)_1  -                             
+  Row   3:          1  (i2c_addr_full == 1)_0  (~(i2c_addr_full == 3) && ~(i2c_addr_full == 2) && ~(i2c_addr_full == 0))
+  Row   4:          1  (i2c_addr_full == 1)_1  ~(i2c_addr_full == 0)         
+  Row   5:          1  (i2c_addr_full == 2)_0  (~(i2c_addr_full == 3) && ~((i2c_addr_full == 0) || (i2c_addr_full == 1)))
+  Row   6:          2  (i2c_addr_full == 2)_1  ~((i2c_addr_full == 0) || (i2c_addr_full == 1))
+  Row   7:          1  (i2c_addr_full == 3)_0  ~(((i2c_addr_full == 0) || (i2c_addr_full == 1)) || (i2c_addr_full == 2))
+  Row   8:          2  (i2c_addr_full == 3)_1  ~(((i2c_addr_full == 0) || (i2c_addr_full == 1)) || (i2c_addr_full == 2))
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      16        16         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /testbench/dut/u_reg_file --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../RTL/register_file.v
+    26              1                         75     
+    29              1                         79     
+    35              1                       3839     
+    37              1                         12     
+    38              1                         12     
+    39              1                         12     
+    40              1                         12     
+    43              1                          2     
+    44              1                          8     
+    45              1                          3     
+    55              1                         83     
+    57              1                         14     
+    58              1                         16     
+    59              1                         11     
+    60              1                         11     
+    61              1                         31     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        146       101        45    69.17%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /testbench/dut/u_reg_file --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                               clk           5           5      100.00 
+                                       i2c_addr[0]           2           3      100.00 
+                                       i2c_addr[1]           3           4      100.00 
+                                     i2c_addr[2-3]           1           1      100.00 
+                                  i2c_addr_full[0]           2           3      100.00 
+                                  i2c_addr_full[1]           3           4      100.00 
+                                i2c_addr_full[2-7]           1           1      100.00 
+                                   i2c_addr_mapped           1           0       50.00 
+                                  i2c_rd_data[0-7]           1           1      100.00 
+                                    i2c_wr_allowed           3           2      100.00 
+                                  i2c_wr_data[0-7]           5           5      100.00 
+                                         i2c_wr_en           1           1      100.00 
+                                        reg_0[0-1]           1           1      100.00 
+                                        reg_0[2-4]           0           0        0.00 
+                                          reg_0[5]           0           1       50.00 
+                                          reg_0[6]           1           1      100.00 
+                                          reg_0[7]           0           1       50.00 
+                                        reg_1[0-7]           1           1      100.00 
+                                          reg_2[0]           0           1       50.00 
+                                        reg_2[1-2]           1           1      100.00 
+                                        reg_2[3-4]           0           1       50.00 
+                                          reg_2[5]           1           1      100.00 
+                                          reg_2[6]           0           1       50.00 
+                                          reg_2[7]           1           1      100.00 
+                                 reg_3_status[0-7]           0           0        0.00 
+                             reg_3_status_reg[0-7]           0           0        0.00 
+                                             rst_n           5           5      100.00 
+
+Total Node Count     =         73 
+Toggled Node Count   =         47 
+Untoggled Node Count =         26 
+
+Toggle Coverage      =      69.17% (101 of 146 bins)
+
+=================================================================================
+=== Instance: /testbench/dut
+=== Design Unit: work.i2c_peripheral_top
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        134       105        29    78.35%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /testbench/dut --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                    cfg_reg_1[0-7]           1           1      100.00 
+                                               clk           5           5      100.00 
+                                   ctrl_reg_0[0-1]           1           1      100.00 
+                                   ctrl_reg_0[2-4]           0           0        0.00 
+                                     ctrl_reg_0[5]           0           1       50.00 
+                                     ctrl_reg_0[6]           1           1      100.00 
+                                     ctrl_reg_0[7]           0           1       50.00 
+                           idata_reg_3_status[0-7]           0           0        0.00 
+                                    odata_reg_2[0]           0           1       50.00 
+                                  odata_reg_2[1-2]           1           1      100.00 
+                                  odata_reg_2[3-4]           0           1       50.00 
+                                    odata_reg_2[5]           1           1      100.00 
+                                    odata_reg_2[6]           0           1       50.00 
+                                    odata_reg_2[7]           1           1      100.00 
+                                             rst_n           5           5      100.00 
+                                               scl           5           5      100.00 
+                                               sda           5           5      100.00 
+                                         w_addr[0]           2           3      100.00 
+                                         w_addr[1]           3           4      100.00 
+                                       w_addr[2-3]           1           1      100.00 
+                                    w_addr_full[0]           2           3      100.00 
+                                    w_addr_full[1]           3           4      100.00 
+                                  w_addr_full[2-7]           1           1      100.00 
+                                     w_addr_mapped           1           0       50.00 
+                                    w_rd_data[0-7]           1           1      100.00 
+                                      w_wr_allowed           3           2      100.00 
+                                    w_wr_data[0-7]           5           5      100.00 
+                                           w_wr_en           1           1      100.00 
+
+Total Node Count     =         67 
+Toggled Node Count   =         49 
+Untoggled Node Count =         18 
+
+Toggle Coverage      =      78.35% (105 of 134 bins)
+
+=================================================================================
+=== Instance: /uvm_pkg
+=== Design Unit: mtiUvm.uvm_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/uvm_pkg/uvm_component_name_check_visitor/visit/immed__262
+                     C:/questasim64_2021.1/win64/../verilog_src/uvm-1.2/src/base/uvm_traversal.svh(262)
+                                                        0          5
+
+=================================================================================
+=== Instance: /mh_i2c_agent_master_pkg
+=== Design Unit: work.mh_i2c_agent_master_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      3        na        na   100.00%
+        Coverpoints/Crosses         10        na        na        na
+            Covergroup Bins         35        35         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_addr 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               161          1          -    Covered              
+        bin auto[I2C_READ]                                 80          1          -    Covered              
+    Coverpoint slave_addr                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin slave_0                                       181          1          -    Covered              
+        bin illegal_slaves_0                               24          1          -    Covered              
+        bin illegal_slaves_1                               36          1          -    Covered              
+    Coverpoint addr_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                 181          1          -    Covered              
+        bin auto[I2C_NACK]                                 60          1          -    Covered              
+    Cross addr_resp_x_access_type                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            20          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           40          1          -    Covered              
+            bin <auto[I2C_READ],auto[I2C_ACK]>             60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>           121          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_addr  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               161          1          -    Covered              
+        bin auto[I2C_READ]                                 80          1          -    Covered              
+    Coverpoint slave_addr                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin slave_0                                       181          1          -    Covered              
+        bin illegal_slaves_0                               24          1          -    Covered              
+        bin illegal_slaves_1                               36          1          -    Covered              
+    Coverpoint addr_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                 181          1          -    Covered              
+        bin auto[I2C_NACK]                                 60          1          -    Covered              
+    Cross addr_resp_x_access_type                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            20          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           40          1          -    Covered              
+            bin <auto[I2C_READ],auto[I2C_ACK]>             60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>           121          1          -    Covered              
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_data 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    22         22          -                      
+    missing/total bins:                                     0         22          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint registers                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin mapped_regs[0]                                 14          1          -    Covered              
+        bin mapped_regs[1]                                 26          1          -    Covered              
+        bin mapped_regs[2]                                 14          1          -    Covered              
+        bin mapped_regs[3]                                106          1          -    Covered              
+        bin unmapped_regs                                  60          1          -    Covered              
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               160          1          -    Covered              
+        bin auto[I2C_READ]                                 60          1          -    Covered              
+    Coverpoint data_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                  93          1          -    Covered              
+        bin auto[I2C_NACK]                                127          1          -    Covered              
+    Cross access_x_response                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           67          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>            93          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin read_ack                             0                     -    ZERO                 
+    Cross access_x_reg                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],unmapped_regs>             20          1          -    Covered              
+            bin <auto[I2C_WRITE],unmapped_regs>            40          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[3]>            26          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[3]>           80          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[2]>             4          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[2]>           10          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[1]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[1]>           21          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[0]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[0]>            9          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_data  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    22         22          -                      
+    missing/total bins:                                     0         22          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint registers                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin mapped_regs[0]                                 14          1          -    Covered              
+        bin mapped_regs[1]                                 26          1          -    Covered              
+        bin mapped_regs[2]                                 14          1          -    Covered              
+        bin mapped_regs[3]                                106          1          -    Covered              
+        bin unmapped_regs                                  60          1          -    Covered              
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               160          1          -    Covered              
+        bin auto[I2C_READ]                                 60          1          -    Covered              
+    Coverpoint data_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                  93          1          -    Covered              
+        bin auto[I2C_NACK]                                127          1          -    Covered              
+    Cross access_x_response                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           67          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>            93          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin read_ack                             0                     -    ZERO                 
+    Cross access_x_reg                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],unmapped_regs>             20          1          -    Covered              
+            bin <auto[I2C_WRITE],unmapped_regs>            40          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[3]>            26          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[3]>           80          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[2]>             4          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[2]>           10          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[1]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[1]>           21          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[0]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[0]>            9          1          -    Covered              
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_reset 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint reset_on_going                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         5          1          -    Covered              
+        bin auto[1]                                         1          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_reset  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint reset_on_going                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         5          1          -    Covered              
+        bin auto[1]                                         1          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_addr 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               161          1          -    Covered              
+        bin auto[I2C_READ]                                 80          1          -    Covered              
+    Coverpoint slave_addr                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin slave_0                                       181          1          -    Covered              
+        bin illegal_slaves_0                               24          1          -    Covered              
+        bin illegal_slaves_1                               36          1          -    Covered              
+    Coverpoint addr_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                 181          1          -    Covered              
+        bin auto[I2C_NACK]                                 60          1          -    Covered              
+    Cross addr_resp_x_access_type                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            20          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           40          1          -    Covered              
+            bin <auto[I2C_READ],auto[I2C_ACK]>             60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>           121          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_addr  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    11         11          -                      
+    missing/total bins:                                     0         11          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               161          1          -    Covered              
+        bin auto[I2C_READ]                                 80          1          -    Covered              
+    Coverpoint slave_addr                             100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin slave_0                                       181          1          -    Covered              
+        bin illegal_slaves_0                               24          1          -    Covered              
+        bin illegal_slaves_1                               36          1          -    Covered              
+    Coverpoint addr_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                 181          1          -    Covered              
+        bin auto[I2C_NACK]                                 60          1          -    Covered              
+    Cross addr_resp_x_access_type                     100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            20          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           40          1          -    Covered              
+            bin <auto[I2C_READ],auto[I2C_ACK]>             60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>           121          1          -    Covered              
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_data 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    22         22          -                      
+    missing/total bins:                                     0         22          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint registers                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin mapped_regs[0]                                 14          1          -    Covered              
+        bin mapped_regs[1]                                 26          1          -    Covered              
+        bin mapped_regs[2]                                 14          1          -    Covered              
+        bin mapped_regs[3]                                106          1          -    Covered              
+        bin unmapped_regs                                  60          1          -    Covered              
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               160          1          -    Covered              
+        bin auto[I2C_READ]                                 60          1          -    Covered              
+    Coverpoint data_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                  93          1          -    Covered              
+        bin auto[I2C_NACK]                                127          1          -    Covered              
+    Cross access_x_response                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           67          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>            93          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin read_ack                             0                     -    ZERO                 
+    Cross access_x_reg                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],unmapped_regs>             20          1          -    Covered              
+            bin <auto[I2C_WRITE],unmapped_regs>            40          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[3]>            26          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[3]>           80          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[2]>             4          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[2]>           10          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[1]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[1]>           21          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[0]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[0]>            9          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_data  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    22         22          -                      
+    missing/total bins:                                     0         22          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint registers                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin mapped_regs[0]                                 14          1          -    Covered              
+        bin mapped_regs[1]                                 26          1          -    Covered              
+        bin mapped_regs[2]                                 14          1          -    Covered              
+        bin mapped_regs[3]                                106          1          -    Covered              
+        bin unmapped_regs                                  60          1          -    Covered              
+    Coverpoint access_type                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_WRITE]                               160          1          -    Covered              
+        bin auto[I2C_READ]                                 60          1          -    Covered              
+    Coverpoint data_response                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[I2C_ACK]                                  93          1          -    Covered              
+        bin auto[I2C_NACK]                                127          1          -    Covered              
+    Cross access_x_response                           100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],auto[I2C_NACK]>            60          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_NACK]>           67          1          -    Covered              
+            bin <auto[I2C_WRITE],auto[I2C_ACK]>            93          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin read_ack                             0                     -    ZERO                 
+    Cross access_x_reg                                100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[I2C_READ],unmapped_regs>             20          1          -    Covered              
+            bin <auto[I2C_WRITE],unmapped_regs>            40          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[3]>            26          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[3]>           80          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[2]>             4          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[2]>           10          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[1]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[1]>           21          1          -    Covered              
+            bin <auto[I2C_READ],mapped_regs[0]>             5          1          -    Covered              
+            bin <auto[I2C_WRITE],mapped_regs[0]>            9          1          -    Covered              
+ TYPE /mh_i2c_agent_master_pkg/mh_i2c_coverage/mh_i2c_coverage__1/cover_reset 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint reset_on_going                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         5          1          -    Covered              
+        bin auto[1]                                         1          1          -    Covered              
+ Covergroup instance \/mh_i2c_agent_master_pkg::mh_i2c_coverage::mh_i2c_coverage__1::cover_reset  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint reset_on_going                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         5          1          -    Covered              
+        bin auto[1]                                         1          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 3
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/testbench/i2c_intf/cover_start_eventually_stop 
+                                         mh_i2c_intf Verilog  SVA  ../testbench/mh_i2c_intf.sv(62)
+                                                                               240 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/testbench/i2c_intf/assert_data_validity
+                     ../testbench/mh_i2c_intf.sv(52)
+                                                        0          4
+/testbench/i2c_intf/assert_start_eventually_stop
+                     ../testbench/mh_i2c_intf.sv(60)
+                                                        0          4
+/uvm_pkg/uvm_component_name_check_visitor/visit/immed__262
+                     C:/questasim64_2021.1/win64/../verilog_src/uvm-1.2/src/base/uvm_traversal.svh(262)
+                                                        0          5
+
+Total Coverage By Instance (filtered view): 93.43%
+

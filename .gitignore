@@ -1,0 +1,11 @@
+# Exclude simulator outputs and configuration, while retaining coverage data and scripts.
+/verification/sim/**
+!/verification/sim/coverage/
+!/verification/sim/coverage/**
+!/verification/sim/**/*.do
+
+# Exclude Excel workbooks, including temporary Office lock files.
+*.xlsx
+
+# Exclude temporary diagram/editor backups.
+*.bkp

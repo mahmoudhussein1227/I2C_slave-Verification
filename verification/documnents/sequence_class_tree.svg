@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860">
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #202020; }
+      .title { font-size: 30px; font-weight: 700; }
+      .class-name { font-size: 17px; font-weight: 700; }
+      .tight-name { font-size: 14px; font-weight: 700; }
+      .detail { font-size: 15px; }
+      .root { fill: #e8eef8; stroke: #435a7a; stroke-width: 2; }
+      .base { fill: #edf4e8; stroke: #5d7c4c; stroke-width: 2; }
+      .leaf { fill: #fff7e6; stroke: #92743a; stroke-width: 2; }
+      .panel { fill: #fafafa; stroke: #9a9a9a; stroke-width: 1.5; }
+      .edge { fill: none; stroke: #444; stroke-width: 2.2; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #444; stroke-width: 2.2; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="860" fill="#ffffff"/>
+  <text class="title" x="640" y="48" text-anchor="middle">UVM SEQUENCE CLASS TREE</text>
+
+  <rect class="root" x="425" y="80" width="430" height="100" rx="8"/>
+  <text class="class-name" x="640" y="112" text-anchor="middle">uvm_sequence#(</text>
+  <text class="class-name" x="640" y="136" text-anchor="middle">mh_i2c_item_drv#(ADDR_WIDTH))</text>
+  <text class="detail" x="640" y="162" text-anchor="middle">Parameterized sequence base</text>
+
+  <path class="plain" d="M640 180 V225 M330 225 H950 M330 225 V265 M950 225 V265"/>
+  <path class="edge" d="M330 244 V265"/>
+  <path class="edge" d="M950 244 V265"/>
+
+  <rect class="base" x="100" y="265" width="460" height="90" rx="8"/>
+  <text class="class-name" x="330" y="300" text-anchor="middle">mh_i2c_seq_simple_write#(ADDR_WIDTH)</text>
+  <text class="detail" x="330" y="330" text-anchor="middle">Base write sequence; default register 0..3, slave 0x50</text>
+
+  <rect class="base" x="720" y="265" width="460" height="90" rx="8"/>
+  <text class="class-name" x="950" y="300" text-anchor="middle">mh_i2c_seq_simple_read#(ADDR_WIDTH)</text>
+  <text class="detail" x="950" y="330" text-anchor="middle">Register-pointer write followed by repeated-start read</text>
+
+  <path class="plain" d="M330 355 V415 M170 415 H490 M170 415 V460 M330 415 V460 M490 415 V460"/>
+  <path class="edge" d="M170 438 V460"/>
+  <path class="edge" d="M330 438 V460"/>
+  <path class="edge" d="M490 438 V460"/>
+  <path class="plain" d="M950 355 V415 M790 415 H1110 M790 415 V460 M950 415 V460 M1110 415 V460"/>
+  <path class="edge" d="M790 438 V460"/>
+  <path class="edge" d="M950 438 V460"/>
+  <path class="edge" d="M1110 438 V460"/>
+
+  <rect class="leaf" x="95" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="170" y="490" text-anchor="middle">mh_i2c_seq_</text>
+  <text class="tight-name" x="170" y="512" text-anchor="middle">illegal_slave_write</text>
+  <text class="detail" x="170" y="550" text-anchor="middle">Slave != 0x50</text>
+  <text class="detail" x="170" y="574" text-anchor="middle">inherits simple write</text>
+
+  <rect class="leaf" x="255" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="330" y="490" text-anchor="middle">mh_i2c_seq_ro_write</text>
+  <text class="detail" x="330" y="530" text-anchor="middle">Register address = 3</text>
+  <text class="detail" x="330" y="554" text-anchor="middle">inherits simple write</text>
+
+  <rect class="leaf" x="415" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="490" y="490" text-anchor="middle">mh_i2c_seq_</text>
+  <text class="tight-name" x="490" y="512" text-anchor="middle">unmapped_reg_write</text>
+  <text class="detail" x="490" y="550" text-anchor="middle">Register &gt; 3</text>
+  <text class="detail" x="490" y="574" text-anchor="middle">inherits simple write</text>
+
+  <rect class="leaf" x="715" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="790" y="490" text-anchor="middle">mh_i2c_seq_</text>
+  <text class="tight-name" x="790" y="512" text-anchor="middle">illegal_slave_read</text>
+  <text class="detail" x="790" y="550" text-anchor="middle">Slave != 0x50</text>
+  <text class="detail" x="790" y="574" text-anchor="middle">inherits simple read</text>
+
+  <rect class="leaf" x="875" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="950" y="490" text-anchor="middle">mh_i2c_seq_ro_read</text>
+  <text class="detail" x="950" y="530" text-anchor="middle">Register address = 3</text>
+  <text class="detail" x="950" y="554" text-anchor="middle">inherits simple read</text>
+
+  <rect class="leaf" x="1035" y="460" width="150" height="135" rx="8"/>
+  <text class="tight-name" x="1110" y="490" text-anchor="middle">mh_i2c_seq_</text>
+  <text class="tight-name" x="1110" y="512" text-anchor="middle">unmapped_reg_read</text>
+  <text class="detail" x="1110" y="550" text-anchor="middle">Register &gt; 3</text>
+  <text class="detail" x="1110" y="574" text-anchor="middle">inherits simple read</text>
+
+  <rect class="panel" x="90" y="650" width="1100" height="135" rx="8"/>
+  <text class="class-name" x="640" y="686" text-anchor="middle">Specialized sequence constraints</text>
+  <text class="detail" x="640" y="723" text-anchor="middle">RO variants constrain reg_location == 3; unmapped variants constrain it outside 0..3.</text>
+  <text class="detail" x="640" y="751" text-anchor="middle">Illegal-slave variants disable the default 0x50 constraint and require a different address.</text>
+</svg>

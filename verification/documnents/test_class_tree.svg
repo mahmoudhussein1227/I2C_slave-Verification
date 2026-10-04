@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #202020; }
+      .title { font-size: 30px; font-weight: 700; }
+      .class-name { font-size: 18px; font-weight: 700; }
+      .detail { font-size: 15px; }
+      .root { fill: #e8eef8; stroke: #435a7a; stroke-width: 2; }
+      .base { fill: #edf4e8; stroke: #5d7c4c; stroke-width: 2; }
+      .leaf { fill: #fff7e6; stroke: #92743a; stroke-width: 2; }
+      .panel { fill: #fafafa; stroke: #9a9a9a; stroke-width: 1.5; }
+      .edge { fill: none; stroke: #444; stroke-width: 2.2; marker-end: url(#arrow); }
+      .plain { fill: none; stroke: #444; stroke-width: 2.2; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#444"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="900" fill="#ffffff"/>
+  <text class="title" x="600" y="50" text-anchor="middle">UVM TEST CLASS TREE</text>
+
+  <rect class="root" x="425" y="85" width="350" height="70" rx="8"/>
+  <text class="class-name" x="600" y="128" text-anchor="middle">uvm_test</text>
+  <path class="plain" d="M600 155 V205"/>
+  <path class="edge" d="M600 177 V205"/>
+
+  <rect class="base" x="350" y="205" width="500" height="95" rx="8"/>
+  <text class="class-name" x="600" y="241" text-anchor="middle">mh_i2c_test_base</text>
+  <text class="detail" x="600" y="271" text-anchor="middle">Creates the environment and runs simple read/write tests by default</text>
+
+  <path class="plain" d="M600 300 V355 M150 355 H1050 M150 355 V405 M450 355 V405 M750 355 V405 M1050 355 V405"/>
+  <path class="edge" d="M150 382 V405"/>
+  <path class="edge" d="M450 382 V405"/>
+  <path class="edge" d="M750 382 V405"/>
+  <path class="edge" d="M1050 382 V405"/>
+
+  <rect class="leaf" x="35" y="405" width="230" height="125" rx="8"/>
+  <text class="class-name" x="150" y="433" text-anchor="middle">mh_i2c_test_</text>
+  <text class="class-name" x="150" y="455" text-anchor="middle">illegal_slave</text>
+  <text class="detail" x="150" y="485" text-anchor="middle">Factory-overrides read/write</text>
+  <text class="detail" x="150" y="507" text-anchor="middle">with illegal-slave variants</text>
+
+  <rect class="leaf" x="335" y="405" width="230" height="125" rx="8"/>
+  <text class="class-name" x="450" y="433" text-anchor="middle">mh_i2c_test_</text>
+  <text class="class-name" x="450" y="455" text-anchor="middle">ro_reg</text>
+  <text class="detail" x="450" y="485" text-anchor="middle">Factory-overrides read/write</text>
+  <text class="detail" x="450" y="507" text-anchor="middle">with read-only variants</text>
+
+  <rect class="leaf" x="635" y="405" width="230" height="125" rx="8"/>
+  <text class="class-name" x="750" y="433" text-anchor="middle">mh_i2c_test_</text>
+  <text class="class-name" x="750" y="455" text-anchor="middle">unmapped_reg</text>
+  <text class="detail" x="750" y="485" text-anchor="middle">Factory-overrides read/write</text>
+  <text class="detail" x="750" y="507" text-anchor="middle">with unmapped variants</text>
+
+  <rect class="leaf" x="935" y="405" width="230" height="125" rx="8"/>
+  <text class="class-name" x="1050" y="433" text-anchor="middle">mh_i2c_test_</text>
+  <text class="class-name" x="1050" y="455" text-anchor="middle">reset_ongoing</text>
+  <text class="detail" x="1050" y="485" text-anchor="middle">Runs simple write while applying</text>
+  <text class="detail" x="1050" y="507" text-anchor="middle">reset stimulus; no override</text>
+
+  <rect class="panel" x="70" y="600" width="1060" height="210" rx="8"/>
+  <text class="class-name" x="600" y="641" text-anchor="middle">Sequence type overrides installed by derived tests</text>
+  <text class="detail" x="120" y="686">
+    <tspan x="120" dy="0">mh_i2c_test_illegal_slave  →  mh_i2c_seq_illegal_slave_write / mh_i2c_seq_illegal_slave_read</tspan>
+    <tspan x="120" dy="35">mh_i2c_test_ro_reg          →  mh_i2c_seq_ro_write / mh_i2c_seq_ro_read</tspan>
+    <tspan x="120" dy="35">mh_i2c_test_unmapped_reg    →  mh_i2c_seq_unmapped_reg_write / mh_i2c_seq_unmapped_reg_read</tspan>
+    <tspan x="120" dy="35">mh_i2c_test_reset_ongoing   →  no override; directly starts the simple-write sequence</tspan>
+  </text>
+</svg>

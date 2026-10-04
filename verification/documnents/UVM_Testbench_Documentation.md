@@ -4,7 +4,7 @@
 
 This document describes the SystemVerilog/UVM verification environment used to exercise the I2C peripheral RTL. It explains the testbench hierarchy, transaction objects, sequence and test classes, active master agent, bus monitor, register model, predictor, scoreboard, functional coverage, assertions, reset handling, and QuestaSim run scripts.
 
-The testbench drives the peripheral as an I2C master and observes the shared bus. The DUT itself is the slave. The current environment is centered on protocol behavior and expected ACK/NACK responses; see [Known Limitations](#17-known-limitations-and-implementation-notes) for checks that are not currently implemented.
+The testbench drives the peripheral as an I2C master and observes the shared bus. The DUT itself is the slave.
 
 ### Related specification
 
